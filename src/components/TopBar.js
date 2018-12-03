@@ -10,6 +10,9 @@ const styles = {
   }
 }
 
+
+
+
 export default () => (
   <nav className="navbar navbar-expand-lg navbar-light" style={styles.navbar}>
     <a className="navbar-brand"> <img src={logo} alt="Laboratoria logo" height="30" /></a>
