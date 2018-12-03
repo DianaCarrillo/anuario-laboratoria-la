@@ -1,11 +1,10 @@
 import React from 'react';
-import './App.css';
+import Home from './components/Home';
 
 const App = () => (
   <div>
-    Anuario!
+    <Home />
   </div>
-)
-  
+);
 
 export default App;

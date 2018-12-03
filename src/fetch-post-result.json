@@ -5,19 +5,19 @@
       "src": "Twitter",
       "text": "Hola Mundo",
       "date": "2018-12-03T17:43:14.195Z",
-      "autor": "@MajoSoberanes"
+      "author": "@MajoSoberanes"
     },
     {
       "src": "Facebook",
       "text": "Hola Mundo",
       "date": "2018-12-02T17:43:14.195Z",
-      "autor": "Majoodstock"
+      "author": "Majoodstock"
     },
     {
       "src": "Instagram",
       "text": "Hola Mundo",
       "date": "2018-12-01T17:43:14.195Z",
-      "autor": "majosoberanes"
+      "author": "majosoberanes"
     }
   ]
 }
