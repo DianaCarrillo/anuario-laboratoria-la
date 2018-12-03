@@ -4,14 +4,15 @@ const styles = {
 button: {
     backgroundColor : '#4267b2',
     color : 'white',
+    height: '50px'
 },
 
 container: {
     display: 'flex',
     justifyContent: 'center',
-    position: 'absolute',
-    top: '50%',
-    marginLeft: '60px'
+    alignItems: 'center',
+    height: '100vh',
+    alignContent: 'center'
 },
 
 fbicon: {
