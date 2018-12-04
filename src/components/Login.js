@@ -48,11 +48,11 @@ const Login = (props) => {
   }
         
   return (
-    <div className = "container" style = {this.styles.container}>
-      <img src = {logo} height = "50" alt="" style={this.styles.img}/>
+    <div className = "container" style = {styles.container}>
+      <img src = {logo} height = "50" alt="" style={styles.img}/>
       <h1>Laboranuario</h1>
       <button type="button" className = "btn col-lg-3 " onClick= {loginTwitter} style = {styles.button}><i className="fab fa-twitter-square fa-2x" style ={styles.fbIcon}></i> Acceder con twitter</button>
-      <img alt="" src={triangle}  style ={this.styles.triangle} height="100"/>
+      <img alt="" src={triangle}  style ={styles.triangle} height="100"/>
     </div>
   ) 
 }
