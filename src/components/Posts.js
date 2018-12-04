@@ -4,7 +4,6 @@ import data from '../fetch-post-result.json';
 
 const styles = {
   containerPost: {
-    // textAlign: 'center'
     display: 'flex',
     justifyContent: 'center',
     height: '100',
