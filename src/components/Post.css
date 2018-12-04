@@ -1,0 +1,14 @@
+@media (min-width: 720px){
+    .card-container{
+        width: 50%;
+        margin-left: 25%;
+    }
+    .containerPost {
+        text-align: center;  
+        display: flex;
+        justify-content: center;
+        height: 100;
+        align-content: center;
+        flex-direction: column;
+      }
+}

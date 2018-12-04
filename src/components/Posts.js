@@ -9,7 +9,6 @@ const styles = {
     justifyContent: 'center',
     height: '100',
     alignContent: 'center',
-    
     flexDirection: 'column',
 
   }
