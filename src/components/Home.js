@@ -17,12 +17,13 @@ class Home extends React.Component {
     this.state = {
       campuses: [],
       generation: undefined,
+      checkboxesOpen: false,
     };
   }
 
 
   render() {
-    const { campuses, generation } = this.state;
+    const { campuses, generation, checkboxesOpen } = this.state;
     const { user } = this.props;
 
     const handleCampusChange = (e) => {
@@ -40,6 +41,10 @@ class Home extends React.Component {
       this.setState({ generation: e.target.value });
     };
 
+    const clickButtonCampuses = (e) => {
+      this.setState({ checkboxesOpen: !checkboxesOpen})     
+    }
+
     return (
       <div>
         <TopBar user={user}/>
@@ -49,6 +54,8 @@ class Home extends React.Component {
             generation={generation}
             handleCampusChange={handleCampusChange}
             handleGenerationChange={handleGenerationChange}
+            clickButtonCampuses={clickButtonCampuses}
+            checkboxesOpen={checkboxesOpen}
           /> 
           {(campuses.length && generation ) 
             ? <Posts campuses={campuses} generation={generation} /> 
