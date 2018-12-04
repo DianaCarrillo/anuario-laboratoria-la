@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../img/black-logo.png'
 import triangle from '../img/laboratoria_corchetes-m-30_960.png'
+import firebase from '../firebase';
 
 const styles = {
     button: {
@@ -30,16 +31,31 @@ const styles = {
         display: 'block',
         margin: '30px'
     },
+
     triangle: {
         margin: '30px'
     }
 }
 
-export default () => (
-    <div className="container" style={styles.container}>
-        <img src={logo} height="50" alt="" style={styles.img} />
-        <h1>Laboranuario</h1>
-        <button type="button" className="btn col-lg-3 " style={styles.button}> Acceder con twitter</button>
-        <img src={triangle} style={styles.triangle} height="100" alt="" />
-    </div>
-)
+const Login = (props) => {
+
+    const loginTwitter = (e) => {
+        const twitter = new firebase.auth.TwitterAuthProvider();
+        firebase.auth().signInWithPopup(twitter)
+            .catch((error) => {
+                console.log(error);
+            })
+    }
+
+    return (
+        <div className="container" style={styles.container}>
+            <img src={logo} height="50" alt="" style={styles.img} />
+            <h1>Laboranuario</h1>
+            <button type="button" className="btn col-lg-3 " onClick={loginTwitter} style={styles.button}><i className="fab fa-twitter-square fa-2x" style={styles.fbIcon}></i> Acceder con twitter</button>
+            <img alt="" src={triangle} style={styles.triangle} height="100" />
+        </div>
+    )
+}
+
+export default Login;
+
