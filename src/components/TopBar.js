@@ -37,7 +37,7 @@ const Topbar = (props) => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
-              <a className="nav-link" href="j" style={styles.links} onClick={handleLogOut} >Cerrar sesión</a>
+              <a className="nav-link" href="" style={styles.links} onClick={handleLogOut} >Cerrar sesión</a>
             </li>
           </ul>
         </div>

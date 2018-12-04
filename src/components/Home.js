@@ -3,6 +3,13 @@ import TopBar from './TopBar';
 import HashtagPicker from './HashtagPicker';
 import Posts from './Posts';
 
+const styles ={
+  text: {
+    fontSize: '2em',
+    textAlign: 'center'
+  }
+} 
+    
 
 class Home extends React.Component {
   constructor(props) {
@@ -12,6 +19,7 @@ class Home extends React.Component {
       generation: undefined,
     };
   }
+
 
   render() {
     const { campuses, generation } = this.state;
@@ -41,8 +49,13 @@ class Home extends React.Component {
             generation={generation}
             handleCampusChange={handleCampusChange}
             handleGenerationChange={handleGenerationChange}
-          />
-          <Posts campuses={campuses} generation={generation} />
+          /> 
+          {(campuses.length && generation ) 
+            ? <Posts campuses={campuses} generation={generation} /> 
+            : (<div className="row" style={styles.text}>
+                <div className="col-12">Para comenzar, selecciona un campus y una generación.</div>
+               </div>)
+          }
         </div>
       </div>
     );

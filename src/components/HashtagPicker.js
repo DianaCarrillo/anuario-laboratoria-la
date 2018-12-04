@@ -1,13 +1,5 @@
 import React from 'react';
 
-const styles = {
-  text: {
-    fontSize: '2em',
-    textAlign: 'center'
-  }
-}
-
-
 const campuses = {
   lim: 'Lima',
   scl: 'Santiago',
@@ -19,9 +11,6 @@ const campuses = {
 
 export default ({ campus, generation, handleCampusChange, handleGenerationChange }) => (
   <div>
-    <div className="row" style={styles.text}>
-      <div className="col-12">Para comenzar, selecciona un campus y una generación.</div>
-    </div>
     <div className="row mt-4 mb-2">
       <div className="col-sm-12 col-md-6 mb-3">
         <label className="input-group-text mb-2" htmlFor="inputGroupSelect01">Campus</label>
