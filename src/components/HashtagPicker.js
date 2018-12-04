@@ -7,7 +7,17 @@ const styles = {
   }
 }
 
-export default () => (
+
+const campuses = {
+  lim: 'Lima',
+  scl: 'Santiago',
+  cdmx: 'Ciudad de México',
+  gdl: 'Guadalajara',
+  spl: 'Sao Paulo',
+};
+
+
+export default ({ campus, generation, handleCampusChange, handleGenerationChange }) => (
   <div>
     <div className="row" style={styles.text}>
       <div className="col-12">Para comenzar, selecciona un campus y una generación.</div>
@@ -16,25 +26,16 @@ export default () => (
       <div className="col-sm-12 col-md-6 mb-3">
         <label className="input-group-text mb-2" htmlFor="inputGroupSelect01">Campus</label>
         <div className="row">
-          <div className="col-sm-6 col-md-3">
-            <div>
-              <input type="checkbox" aria-label="Checkbox for following text input" value="lima" /> Lima
+          {Object.keys(campuses).map(key => (
+            <div key={key}>
+              <input
+                type="checkbox"
+                aria-label="Checkbox for following text input"
+                value={key}
+                onClick={handleCampusChange}
+              /> {campuses[key]}
             </div>
-            <div>
-              <input type="checkbox" aria-label="Checkbox for following text input" value="santiago" /> Santiago
-            </div>
-            <div>
-              <input type="checkbox" aria-label="Checkbox for following text input" value="cdmx" /> CDMX
-            </div>
-          </div>
-          <div className="col-sm-6 col-md-3">
-            <div>
-              <input type="checkbox" aria-label="Checkbox for following text input" value="guadalajara" /> Guadalajara
-            </div>
-            <div>
-              <input type="checkbox" aria-label="Checkbox for following text input" value="saopaulo" /> Sao Paulo
-            </div>
-          </div>
+          ))}
         </div>
       </div>
       <div className="col-sm-12 col-md-6">
@@ -42,11 +43,14 @@ export default () => (
           <div className="input-group-prepend">
             <label className="input-group-text" htmlFor="inputGroupSelect01">Generaciones</label>
           </div>
-          <select className="custom-select" id="inputGroupSelect01">
+          <select onChange={handleGenerationChange} className="custom-select" id="inputGroupSelect01">
             <option value="defaultValue">Opciones...</option>
             <option value="1">Primera</option>
             <option value="2">Segunda</option>
             <option value="3">Tercera</option>
+            <option value="4">Cuarta</option>
+            <option value="5">Quinta</option>
+            <option value="6">Sexta</option>
           </select>
         </div>
       </div>

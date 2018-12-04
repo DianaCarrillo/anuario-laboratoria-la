@@ -12,7 +12,7 @@ const styles = {
 }
 
 const Topbar = (props) => {
-console.log(props)
+// console.log(props)
   const handleLogOut = () => {
     firebase.auth().signOut()
       .catch((error) => {
