@@ -26,16 +26,18 @@ export default ({ campus, generation, handleCampusChange, handleGenerationChange
       <div className="col-sm-12 col-md-6 mb-3">
         <label className="input-group-text mb-2" htmlFor="inputGroupSelect01">Campus</label>
         <div className="row">
-          {Object.keys(campuses).map(key => (
-            <div key={key}>
-              <input
-                type="checkbox"
-                aria-label="Checkbox for following text input"
-                value={key}
-                onClick={handleCampusChange}
-              /> {campuses[key]}
-            </div>
-          ))}
+          <div className="col-6">
+            {Object.keys(campuses).map(key => (
+              <div key={key}>
+                <input
+                  type="checkbox"
+                  aria-label="Checkbox for following text input"
+                  value={key}
+                  onClick={handleCampusChange}
+                /> {campuses[key]}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       <div className="col-sm-12 col-md-6">
