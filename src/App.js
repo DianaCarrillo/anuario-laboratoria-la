@@ -17,16 +17,16 @@ class App extends Component {
     });
   }
 
-  render() {
+  render() {    
     if (this.state.user === undefined) {
       return <div>Loading...</div>;
     }
 
     if (!this.state.user) {
-      return <Login />;
+      return <Login state = {this.state.user} />;
     }
 
-    return <Home />;
+    return <Home state = {this.state.user} />;
   }
 }
 
