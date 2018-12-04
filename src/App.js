@@ -17,6 +17,10 @@ class App extends Component {
     });
   }
 
+  handleLogOut = () => {
+    console.log('bye')
+  }
+
   render() {
     if (this.state.user === undefined) {
       return <div>Loading...</div>;
@@ -26,7 +30,7 @@ class App extends Component {
       return <Login />;
     }
 
-    return <Home />;
+    return <Home logOut = {this.handleLogOut} />;
   }
 }
 
