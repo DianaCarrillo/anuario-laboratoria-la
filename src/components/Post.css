@@ -1,0 +1,6 @@
+@media (min-width: 720px){
+    .card-container{
+        width: 50%;
+        margin-left: 25%;
+    }
+}
