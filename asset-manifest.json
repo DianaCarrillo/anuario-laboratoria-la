@@ -1,14 +1,15 @@
 {
-  "main.css": "/DianaCarrillo/anuario-laboratoria-la/static/css/main.a7309d52.chunk.css",
-  "main.js": "/DianaCarrillo/anuario-laboratoria-la/static/js/main.76d06e6e.chunk.js",
-  "main.js.map": "/DianaCarrillo/anuario-laboratoria-la/static/js/main.76d06e6e.chunk.js.map",
-  "static/js/1.2dd891c4.chunk.js": "/DianaCarrillo/anuario-laboratoria-la/static/js/1.2dd891c4.chunk.js",
-  "static/js/1.2dd891c4.chunk.js.map": "/DianaCarrillo/anuario-laboratoria-la/static/js/1.2dd891c4.chunk.js.map",
-  "runtime~main.js": "/DianaCarrillo/anuario-laboratoria-la/static/js/runtime~main.5761a7a3.js",
-  "runtime~main.js.map": "/DianaCarrillo/anuario-laboratoria-la/static/js/runtime~main.5761a7a3.js.map",
-  "static/media/logo.svg": "/DianaCarrillo/anuario-laboratoria-la/static/media/logo.5d5d9eef.svg",
-  "static/css/main.a7309d52.chunk.css.map": "/DianaCarrillo/anuario-laboratoria-la/static/css/main.a7309d52.chunk.css.map",
-  "index.html": "/DianaCarrillo/anuario-laboratoria-la/index.html",
-  "precache-manifest.7bfad56f37f396d2be34f500d5ae760a.js": "/DianaCarrillo/anuario-laboratoria-la/precache-manifest.7bfad56f37f396d2be34f500d5ae760a.js",
-  "service-worker.js": "/DianaCarrillo/anuario-laboratoria-la/service-worker.js"
+  "main.css": "/anuario-laboratoria-la/static/css/main.5448bd27.chunk.css",
+  "main.js": "/anuario-laboratoria-la/static/js/main.619f146a.chunk.js",
+  "main.js.map": "/anuario-laboratoria-la/static/js/main.619f146a.chunk.js.map",
+  "static/js/1.fdcbcb9b.chunk.js": "/anuario-laboratoria-la/static/js/1.fdcbcb9b.chunk.js",
+  "static/js/1.fdcbcb9b.chunk.js.map": "/anuario-laboratoria-la/static/js/1.fdcbcb9b.chunk.js.map",
+  "runtime~main.js": "/anuario-laboratoria-la/static/js/runtime~main.15943041.js",
+  "runtime~main.js.map": "/anuario-laboratoria-la/static/js/runtime~main.15943041.js.map",
+  "static/css/main.5448bd27.chunk.css.map": "/anuario-laboratoria-la/static/css/main.5448bd27.chunk.css.map",
+  "static/media/twitter.svg": "/anuario-laboratoria-la/static/media/twitter.be066898.svg",
+  "static/media/laboratoria_corchetes-m-30_960.png": "/anuario-laboratoria-la/static/media/laboratoria_corchetes-m-30_960.dec6498d.png",
+  "index.html": "/anuario-laboratoria-la/index.html",
+  "precache-manifest.69f40f2e91f79d5c6d445e87be98b389.js": "/anuario-laboratoria-la/precache-manifest.69f40f2e91f79d5c6d445e87be98b389.js",
+  "service-worker.js": "/anuario-laboratoria-la/service-worker.js"
 }

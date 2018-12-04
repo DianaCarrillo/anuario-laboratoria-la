@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/DianaCarrillo/anuario-laboratoria-la/precache-manifest.7bfad56f37f396d2be34f500d5ae760a.js"
+  "/anuario-laboratoria-la/precache-manifest.69f40f2e91f79d5c6d445e87be98b389.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/DianaCarrillo/anuario-laboratoria-la/index.html", {
+workbox.routing.registerNavigationRoute("/anuario-laboratoria-la/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
