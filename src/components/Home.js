@@ -7,7 +7,13 @@ import Posts from './Posts';
 export default () => (
   <div>
     <TopBar />
-    <HashtagPicker />
-    <Posts />
+    <div className="container">
+      <HashtagPicker />
+      <div className="row">
+        <div className="col-sm-6 col-md-4">
+          <Posts />
+        </div>
+      </div>
+    </div>
   </div>
 );
