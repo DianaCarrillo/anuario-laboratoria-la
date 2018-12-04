@@ -1,14 +1,13 @@
 import React from 'react';
 import logo from '../img/black-logo.png'
 import triangle from '../img/laboratoria_corchetes-m-30_960.png'
+
 const styles = {
 button: {
     backgroundColor : '#1da1f2',
     color : 'white',
     flex: 'none',
-    // height: '50px',
     display: 'block',
-    // paddingRight: '10px'
 },
 
 container: {
@@ -36,11 +35,11 @@ triangle: {
 
 
 }
-export default () =>(
-<div className = "container" style = {styles.container}>
-    <img src = {logo} height = "50" alt="" style={styles.img}/>
-    <h1>Laboranuario</h1>
-    <button type="button" className = "btn col-lg-3 " style = {styles.button}> Acceder con twitter</button>
-    <img src={triangle}  style ={styles.triangle}height="100"/>
-</div>
+export default () => (
+    <div className = "container" style = {styles.container}>
+        <img src = {logo} height = "50" alt="" style={styles.img}/>
+        <h1>Laboranuario</h1>
+        <button type="button" className = "btn col-lg-3 " style = {styles.button}> Acceder con twitter</button>
+        <img src={triangle} alt="" style ={styles.triangle}height="100"/>
+    </div>
 )
