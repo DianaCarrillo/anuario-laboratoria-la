@@ -14,7 +14,6 @@ const styles = {
 
 
 const Post = ({ post }) => {
-  console.log(post)
   return (
     <div className="card mt-3 card-container" style={styles.border}>
       {post.photo && (

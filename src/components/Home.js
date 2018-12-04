@@ -12,11 +12,7 @@ export default (props) => {
     <TopBar user = {props.state}/>
     <div className="container">
       <HashtagPicker />
-      {/* <div className="row"> */}
-        {/* <div className="col-sm-6 col-md-4"> */}
-          <Posts />
-        {/* </div> */}
-      {/* </div> */}
+      <Posts />
     </div>
   </div>
   )
