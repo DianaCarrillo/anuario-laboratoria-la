@@ -30,7 +30,7 @@ const styles = {
 
   },
   laboranuario: {
-    fontSize: '300%',
+    // fontSize: '500%',
     marginTop: '-150px',
     color: 'white'
   },
@@ -49,7 +49,7 @@ const Login = (props) => {
     <div>
       <TopBar user={props.state} />
       <div className="container" style={styles.container}>
-        <h1 style={styles.laboranuario} className="animated pulse">Laboranuario</h1>
+        <h1 style={styles.laboranuario} className="animated pulse" width='100'>Laboranuario</h1>
         <button type="button" className="btn col-lg-3" onClick={loginTwitter} style={styles.button}> <i className="fab fa-twitter" style={styles.twitter} ></i> Acceder con twitter</button>
         <img alt="" src={triangle} style={styles.triangle} height="150" />
       </div>

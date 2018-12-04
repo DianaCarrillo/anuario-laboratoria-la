@@ -4,7 +4,13 @@ import twitter from '../img/twitter.svg';
 const styles = {
   border: {
     border: '2px solid #FFFFFF',
-    color: '#000000'
+    color: '#000000',
+    width:'50%',
+    marginLeft: '25%'
+  },
+  photo: {
+    width: '100%',
+    height: '100%'
   }
 }
 
@@ -13,7 +19,7 @@ const Post = ({ post }) => {
   console.log(post)
   return (
     <div className="card mt-3" style={styles.border}>
-      <img className="card-img-top" src={post.photo} alt="Foto" />
+      <img className="card-img-top" src={post.photo} alt="Foto" style ={styles.photo} />
       <div className="card-body">
         <h5 className="card-title">{post.author}</h5>
         <h6 className="card-subtitle mb-2 text-muted">{post.date}</h6>

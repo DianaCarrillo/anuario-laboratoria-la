@@ -10,7 +10,7 @@ const styles = {
 export default () => (
   <div>
     <div className="row" style={styles.text}>
-      <div className="col-12">Para empezar, selecciona un campus y una generacion.</div>
+      <div className="col-12">Para comenzar, selecciona un campus y una generación.</div>
     </div>
     <div className="row mt-4 mb-2">
       <div className="col-sm-12 col-md-6 mb-3">
