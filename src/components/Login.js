@@ -40,7 +40,7 @@ export default () =>(
 <div className = "container" style = {styles.container}>
     <img src = {logo} height = "50" alt="" style={styles.img}/>
     <h1>Laboranuario</h1>
-    <button type="button" className = "btn col-lg-3 " style = {styles.button}><i className="fab fa-twitter-square fa-2x" style ={styles.fbIcon}></i> Acceder con twitter</button>
+    <button type="button" className = "btn col-lg-3 " style = {styles.button}> Acceder con twitter</button>
     <img src={triangle}  style ={styles.triangle}height="100"/>
 </div>
 )
