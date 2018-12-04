@@ -17,7 +17,9 @@ const Post = ({ post }) => {
   console.log(post)
   return (
     <div className="card mt-3 card-container" style={styles.border}>
-      <img className="card-img-top" src={post.photo} alt="Foto" style ={styles.photo} />
+      {post.photo && (
+        <img className="card-img-top" src={post.photo} alt="Foto" style ={styles.photo} />
+      )}
       <div className="card-body">
         <h5 className="card-title">{post.author}</h5>
         <h6 className="card-subtitle mb-2 text-muted">{post.date}</h6>
