@@ -39,7 +39,7 @@ export default () => (
     </div>
     <div className="row mt-3">
       <div className="col-12">
-        <p style={styles}> Para empezar, selecciona un campus y una generacion.</p>
+        <p style={styles}> Para comenzar, selecciona un campus y una generacion.</p>
       </div>
     </div>
   </div>
