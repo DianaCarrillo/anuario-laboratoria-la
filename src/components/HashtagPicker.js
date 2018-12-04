@@ -9,6 +9,9 @@ const styles = {
 
 export default () => (
   <div>
+    <div className="row" style={styles.text}>
+      <div className="col-12">Para empezar, selecciona un campus y una generacion.</div>
+    </div>
     <div className="row mt-4 mb-2">
       <div className="col-sm-12 col-md-6 mb-3">
         <label className="input-group-text mb-2" htmlFor="inputGroupSelect01">Campus</label>
@@ -47,9 +50,6 @@ export default () => (
           </select>
         </div>
       </div>
-    </div>
-    <div className="row" style={styles.text}>
-      <div className="col-12">Para empezar, selecciona un campus y una generacion.</div>
     </div>
   </div>
 );
