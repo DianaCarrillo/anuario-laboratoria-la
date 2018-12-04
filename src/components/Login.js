@@ -1,44 +1,61 @@
-import React from 'react';
+import React, {Component }from 'react';
 import logo from '../img/black-logo.png'
+import triangle from '../img/laboratoria_corchetes-m-30_960.png'
+import firebase from 'firebase';
 
 const styles = {
-button: {
-    backgroundColor : '#4267b2',
+  button: {
+    backgroundColor : '#1da1f2',
     color : 'white',
-    height: '50px',
-    display: 'block'
-},
-
-container: {
+    flex: 'none',
+    // height: '50px',
+    display: 'block',
+    // paddingRight: '10px'
+  },
+      
+  container: {
     display: 'flex',
+    flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
     height: '100vh',
     alignContent: 'center'
-},
+  },
+      
+  fbIcon: {
+    marginRight: '5px',
+    textAlign:'left'        
+  },
+      
+  img: {
+    display: 'block',
+    margin:'30px'
+  },
 
-fbIcon: {
-    marginRight: '15px'
-},
-
-img: {
-    display: 'block'
+  triangle: {
+    margin:'30px'
+  }
 }
 
-
+const Login = (props) => {
+        
+  const loginTwitter = (e) => {
+    const twitter = new firebase.auth.TwitterAuthProvider();
+    firebase.auth().signInWithPopup(twitter)
+    .catch((error) => {
+      console.log(error);
+    })
+  }
+        
+    return (
+      <div className = "container" style = {this.styles.container}>
+        <img src = {logo} height = "50" alt="" style={this.styles.img}/>
+        <h1>Laboranuario</h1>
+        <button type="button" className = "btn col-lg-3 " onClick= {loginTwitter} style = {styles.button}><i className="fab fa-twitter-square fa-2x" style ={styles.fbIcon}></i> Acceder con twitter</button>
+        <img src={triangle}  style ={this.styles.triangle} height="100"/>
+      </div>
+    ) 
 }
-export default () =>(
-<div className = "container" style = {styles.container}>
-    <div className="row">
-        <div className="col-12">
-            <img src = {logo} height = "10" alt="" style={styles.img}/>
-        </div>
-    </div>
-    <div className="row">
-        <div className="col-12">
-            <button type="button" className = "btn col-lg-3 " style = {styles.button}><i className="fab fa-facebook-square" style ={styles.fbIcon}></i> Acceder con Facebook</button>
-        </div>
-    </div>
-</div>
 
-)
+export default Login;
+
