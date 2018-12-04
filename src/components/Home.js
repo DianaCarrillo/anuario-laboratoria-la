@@ -4,9 +4,12 @@ import HashtagPicker from './HashtagPicker';
 import Posts from './Posts';
 
 
-export default () => (
+export default (props) => {
+  console.log(props.state);
+  return (
+  
   <div>
-    <TopBar />
+    <TopBar user = {props.state}/>
     <div className="container">
       <HashtagPicker />
       <div className="row">
@@ -16,4 +19,5 @@ export default () => (
       </div>
     </div>
   </div>
-);
+  )
+};
