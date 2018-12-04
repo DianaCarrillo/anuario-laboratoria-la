@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../img/black-logo.png'
 import triangle from '../img/laboratoria_corchetes-m-30_960.png'
-import firebase from 'firebase';
+import firebase from '../firebase';
 
 const styles = {
   button: {
