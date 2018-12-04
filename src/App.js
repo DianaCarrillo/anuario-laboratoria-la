@@ -17,10 +17,6 @@ class App extends Component {
     });
   }
 
-  handleLogOut = () => {
-    console.log('bye')
-  }
-
   render() {
     if (this.state.user === undefined) {
       return <div>Loading...</div>;
