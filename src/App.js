@@ -26,7 +26,7 @@ class App extends Component {
       return <Login />;
     }
 
-    return <Home logOut = {this.handleLogOut} />;
+    return <Home />;
   }
 }
 

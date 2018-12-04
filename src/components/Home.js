@@ -4,9 +4,9 @@ import HashtagPicker from './HashtagPicker';
 import Posts from './Posts';
 
 
-export default ({logOut}) => (
+export default () => (
   <div>
-    <TopBar logOut={logOut} />
+    <TopBar />
     <div className="container">
       <HashtagPicker />
       <div className="row">
