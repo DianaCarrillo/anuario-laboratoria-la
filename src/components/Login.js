@@ -3,6 +3,7 @@ import logo from '../img/l_rgb_-01_360.png'
 import triangle from '../img/laboratoria_corchetes-m-30_960.png'
 import firebase from '../firebase';
 import TopBar from './TopBar'
+
 const styles = {
   button: {
     backgroundColor : '#1da1f2',
