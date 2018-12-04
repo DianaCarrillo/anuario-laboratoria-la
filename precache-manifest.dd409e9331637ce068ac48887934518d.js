@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/anuario-laboratoria-la/static/js/runtime~main.15943041.js"
   },
   {
-    "revision": "619f146ab4eb7d0a1e51",
-    "url": "/anuario-laboratoria-la/static/js/main.619f146a.chunk.js"
+    "revision": "5ef3b5dac31897458d2b",
+    "url": "/anuario-laboratoria-la/static/js/main.5ef3b5da.chunk.js"
   },
   {
     "revision": "fdcbcb9bfdf7dab97651",
     "url": "/anuario-laboratoria-la/static/js/1.fdcbcb9b.chunk.js"
   },
   {
-    "revision": "619f146ab4eb7d0a1e51",
+    "revision": "5ef3b5dac31897458d2b",
     "url": "/anuario-laboratoria-la/static/css/main.5448bd27.chunk.css"
   },
   {
-    "revision": "886d29fee520d625c85296dd739b5f76",
+    "revision": "6e261390f17108797dfa72050707322b",
     "url": "/anuario-laboratoria-la/index.html"
   }
 ];

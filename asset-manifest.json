@@ -1,7 +1,7 @@
 {
   "main.css": "/anuario-laboratoria-la/static/css/main.5448bd27.chunk.css",
-  "main.js": "/anuario-laboratoria-la/static/js/main.619f146a.chunk.js",
-  "main.js.map": "/anuario-laboratoria-la/static/js/main.619f146a.chunk.js.map",
+  "main.js": "/anuario-laboratoria-la/static/js/main.5ef3b5da.chunk.js",
+  "main.js.map": "/anuario-laboratoria-la/static/js/main.5ef3b5da.chunk.js.map",
   "static/js/1.fdcbcb9b.chunk.js": "/anuario-laboratoria-la/static/js/1.fdcbcb9b.chunk.js",
   "static/js/1.fdcbcb9b.chunk.js.map": "/anuario-laboratoria-la/static/js/1.fdcbcb9b.chunk.js.map",
   "runtime~main.js": "/anuario-laboratoria-la/static/js/runtime~main.15943041.js",
@@ -10,6 +10,6 @@
   "static/media/twitter.svg": "/anuario-laboratoria-la/static/media/twitter.be066898.svg",
   "static/media/laboratoria_corchetes-m-30_960.png": "/anuario-laboratoria-la/static/media/laboratoria_corchetes-m-30_960.dec6498d.png",
   "index.html": "/anuario-laboratoria-la/index.html",
-  "precache-manifest.69f40f2e91f79d5c6d445e87be98b389.js": "/anuario-laboratoria-la/precache-manifest.69f40f2e91f79d5c6d445e87be98b389.js",
+  "precache-manifest.dd409e9331637ce068ac48887934518d.js": "/anuario-laboratoria-la/precache-manifest.dd409e9331637ce068ac48887934518d.js",
   "service-worker.js": "/anuario-laboratoria-la/service-worker.js"
 }
