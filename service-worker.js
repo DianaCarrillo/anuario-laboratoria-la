@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/anuario-laboratoria-la/precache-manifest.be026ffe0257e2b2bdd261ac157b67c9.js"
+  "/anuario-laboratoria-la/precache-manifest.497c140e6a74aa3fd0e1b83a4add63eb.js"
 );
 
 workbox.clientsClaim();
