@@ -1,5 +1,5 @@
 import React from 'react';
-import foto from '../img/photo.jpg'
+import foto from '../img/photo.jpg';
 
 const styles = {
   border: {
@@ -11,14 +11,18 @@ const styles = {
   }
 }
 
-export default (props) => (
-  <div className="card mt-3" style={styles.border}>
-    <img className="card-img-top" src={foto} alt="Foto" />
-    <div className="card-body">
-      <h5 className="card-title">Autor</h5>
-      <h6 className="card-subtitle mb-2 text-muted">Fecha</h6>
-      <p className="card-text">Texto opcional</p>
-      <a href="j" className="badge badge-pill" style={styles.pill}>src</a>
-    </div>
-  </div>
-);
+const Post = ({ post }) => {
+  return (
+    < div className="card mt-3" style={styles.border} >
+      <img className="card-img-top" src={foto} alt={foto} />
+      <div className="card-body">
+        <h5 className="card-title">{post.author}</h5>
+        <h6 className="card-subtitle mb-2 text-muted">{post.date}</h6>
+        <p className="card-text">{post.text}</p>
+        <a href="j" className="badge badge-pill" style={styles.pill}>{post.src}</a>
+      </div>
+    </div >
+  )
+}
+
+export default Post;
