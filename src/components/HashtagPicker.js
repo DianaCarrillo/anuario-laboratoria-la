@@ -8,26 +8,35 @@ const campuses = {
   spl: 'Sao Paulo',
 };
 
+const styles = {
+  button: {
+    width: '100%',
+    margin: 'auto'
+  }
+}
 
-export default ({ campus, generation, handleCampusChange, handleGenerationChange }) => (
+
+export default ({ campus, generation, handleCampusChange, handleGenerationChange, clickButtonCampuses, checkboxesOpen }) => (
   <div>
     <div className="row mt-4 mb-2">
       <div className="col-sm-12 col-md-6 mb-3">
-        <label className="input-group-text mb-2" htmlFor="inputGroupSelect01">Campus</label>
-        <div className="row">
-          <div className="col-6">
-            {Object.keys(campuses).map(key => (
-              <div key={key}>
-                <input
-                  type="checkbox"
-                  aria-label="Checkbox for following text input"
-                  value={key}
-                  onClick={handleCampusChange}
-                /> {campuses[key]}
-              </div>
-            ))}
+        <button type="button" className="btn input-group-text mb-2" style={styles.button} onClick={clickButtonCampuses}>Selecciona tu campus <div className="ml-auto"><i className="fas fa-sort-down"></i></div></button>
+        {checkboxesOpen && (
+          <div className="row">
+            <div className="col-6">
+              {Object.keys(campuses).map(key => (
+                <div key={key}>
+                  <input
+                    type="checkbox"
+                    aria-label="Checkbox for following text input"
+                    value={key}
+                    onClick={handleCampusChange}
+                  /> {campuses[key]}
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </div>
       <div className="col-sm-12 col-md-6">
         <div className="input-group mb-3">
