@@ -1,8 +1,24 @@
 import React from 'react';
+import foto from '../img/photo.jpg'
 
+const styles = {
+  border: {
+    border: '1px solid #333333'
+  },
+  pill: {
+    backgroundColor: '#FF009E',
+    color: '#FFFFFF'
+  }
+}
 
 export default (props) => (
-  <div>
-    Post {console.log(props)}
+  <div className="card mt-3" style={styles.border}>
+    <img className="card-img-top" src={foto} alt="Foto" />
+    <div className="card-body">
+      <h5 className="card-title">Autor</h5>
+      <h6 className="card-subtitle mb-2 text-muted">Fecha</h6>
+      <p className="card-text">Texto opcional</p>
+      <a href="j" className="badge badge-pill" style={styles.pill}>src</a>
+    </div>
   </div>
 );
