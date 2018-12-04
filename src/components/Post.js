@@ -1,33 +1,27 @@
 import React from 'react';
+import twitter from '../img/twitter.svg';
 
 const styles = {
   border: {
-    border: '1px solid #333333'
-  },
-  pill: {
-    backgroundColor: '#FF009E',
-    color: '#FFFFFF'
+    border: '2px solid #FFFFFF',
+    color: '#000000'
   }
 }
 
 
-const Post = ({post}) =>{
+const Post = ({ post }) => {
   console.log(post)
-  return(
+  return (
     <div className="card mt-3" style={styles.border}>
-          <img className="card-img-top" src={post.photo} alt="Foto" />
-          <div className="card-body">
-            <h5 className="card-title">{post.author}</h5>
-            <h6 className="card-subtitle mb-2 text-muted">{post.date}</h6>
-            <p className="card-text">{post.text}</p>
-            <a href="j" className="badge badge-pill" style={styles.pill}>{post.src}</a>
-          </div>
+      <img className="card-img-top" src={post.photo} alt="Foto" />
+      <div className="card-body">
+        <h5 className="card-title">{post.author}</h5>
+        <h6 className="card-subtitle mb-2 text-muted">{post.date}</h6>
+        <p className="card-text">{post.text}</p>
+        <img src={twitter} height="20" alt="Twitter logo" />
+      </div>
     </div>
   )
 }
-  
-   
-  
 
- 
 export default Post
